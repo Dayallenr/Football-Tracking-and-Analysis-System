@@ -73,11 +73,7 @@ Final processed video includes:
 
 ### 🎥 Example Output  
 
-[![Output Video Thumbnail](Images/football_thumbnail.png)](output_video/output_video.mp4)  
-*(Click the image above to view the output video)*  
-
-Or download it directly here:  
-[Download Output Video](output_video/output_video.mp4) 
+![Football Analysis Image](output_video/output_image.png)
 
 ---
 
