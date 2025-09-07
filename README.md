@@ -73,11 +73,11 @@ Final processed video includes:
 
 ### 🎥 Example Output  
 
-[![Watch the demo](Images/football_thumbnail.png)](https://youtu.be/YOUR_VIDEO_LINK)  
-*(Click the image above to watch the demo video)*  
+[![Output Video Thumbnail](Images/football_thumbnail.png)](output_video/output_video.mp4)  
+*(Click the image above to view the output video)*  
 
-Or download the sample output video here:  
-[Output Video](output.mp4)  
+Or download it directly here:  
+[Download Output Video](output_video/output_video.mp4) 
 
 ---
 
