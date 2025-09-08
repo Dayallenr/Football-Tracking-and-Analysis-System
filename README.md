@@ -17,12 +17,28 @@ A YOLOv8x model was trained to detect:
 - Confidence threshold: 0.1  
 - Image size: 640x640  
 - Hardware: NVIDIA A100 GPU  
-- Achieved **98.7% precision**, **84.2% mAP50**
+- Achieved **94.2% precision**, **83% mAP50**
 
 **Training Results**
-| Class | Images | Instances | Precision (P) | Recall (R) | mAP50 | mAP50-95 |
-|-------|--------|-----------|---------------|------------|-------|----------|
-| all   | 2020   | 8080      | 1             | 1          | 0.995 | 0.97   |
+| Class | Images | Instances | Precision (P) | F1 Confidence | mAP50 | mAP50-95 |
+|-------|--------|-----------|---------------|---------------|-------|----------|
+| all   | 38     | 905       | 94.2          | 95.3          | 0.83  | 0.60     |
+
+
+📉 **Loss Curves**  
+Here are the loss curves for training:
+
+![Training Losses](Metrics/results.png)
+
+📉 **Loss Curves**  
+Here is the f1 curve for training:
+
+![F1 Curve](Metrics/BoxF1_curve.png)
+
+📊 **Confusion Matrix**  
+Here is the confusion matrix:
+
+![Confusion matrix](Metrics/confusion_matrix.png)
 
 ---
 
@@ -82,11 +98,4 @@ Final processed video includes:
 - **ByteTrack (Supervision)** – Multi-object tracking  
 - **OpenCV** – Frame processing, optical flow, perspective transforms  
 - **NumPy / Pandas** – Data handling, interpolation  
-- **Scikit-learn** – K-Means clustering  
-
----
-
-## Example Command  
-
-```bash
-python main.py --input input_video.mp4 --output output_video.mp4
+- **Scikit-learn** – K-Means clustering 
